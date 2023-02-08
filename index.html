@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <title> Encriptador en JavaScript | SC </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <div class="container">
+      <!-- LEFT CONTAINER -->
+
+      <div class="left-container">
+
+        <div class="header">
+          <img class="logo" src="MEDIA/logo.png">
+          <a href="https://www.linkedin.com/in/sayuri-cerna/">LinkedIn</a>
+        </div>
+
+        <div class="text-box-middle">
+          <textarea  class="textarea1" id="text" placeholder="Ingresa el texto aquí" cols="100" rows="7"></textarea>
+        </div>
+
+        <div class="text-box-down">
+          <div class="text-box-icon">
+            <i class="bi bi-exclamation-circle-fill"></i>
+            <p>Solo Minusculas y no numeros</p>
+          </div>
+          <div class="button-box">
+            <button class=" button button-en" onclick="encryptString() " onclick="esconder()">Encriptar</button>
+            <button class=" button button-de" onclick="decryptString() " onclick="esconder()">Desencriptar</button>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <!-- RIGHT CONTAINER -->
+
+      <div class="right-container">
+
+        <div class="image-box">
+          <img  class="image" src="MEDIA/doll.png" >
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+
+        <div class="hidden-container">
+          <div>
+            <textarea class="textarea2" id="outputText" rows="7" cols="100"></textarea>
+          </div>
+          <div class="button-box-hidden" >
+            <p id="anuncio" class="anuncio"></p>
+            <button class="button button-copy" onclick="copy()">copiar</button>
+          </div>
+        </div>
+        
+
+      </div>  
+    </div>
+
+
+    <!-- Java Script -->
+    <script src="main.js" ></script>
+
+  </body>
+
+</html>
