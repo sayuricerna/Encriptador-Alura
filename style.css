@@ -168,7 +168,12 @@ img{
     height: 100%;
     color: #0A3871;
 }
-
+/*MOBILE*/
+@media screen and (max-width: 430px){
+    .container{
+        display: inline;
+    }
+}
 /*Tablet*/
 @media screen and (max-width: 850px){
     .container{
